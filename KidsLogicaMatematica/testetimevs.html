@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <input type="button" value="Iniciar troca" id="bt_ini" onclick="iniciar()"><br><br>
+    <input type="button" value="Parar troca" onclick="parar()">
+
+<label id="data"></label>
+<label id="hora"></label>
+ <script>
+       // const hora = new Date().toLocaleTimeString();
+        //const date = new Date().toLocaleDateString();
+        var timer;
+        function time() {
+            let today = new Date();
+            today.setMinutes(today.getMinutes());
+            document.getElementById('hora').innerHTML = today.toLocaleTimeString();
+            document.getElementById('data').innerHTML = today.toLocaleDateString();
+        }
+       // setInterval(time, 1000);
+
+            function iniciar(){		
+				clearInterval(timer);
+				timer=setInterval(time,1000);
+			}
+
+            function parar(){
+				clearInterval(timer);
+			}
+
+    </script>
+</body>
+</html>
