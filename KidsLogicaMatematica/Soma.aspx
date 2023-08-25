@@ -25,7 +25,7 @@
             </tr>
             <tr>
                 <td style="padding-right: 20px;">
-                    <asp:Button ID="btnMaisImg" stylo="width: 270px;" runat="server" Text="Um dedinho" CssClass="btn btn-default" OnClick="btnMaisImg_Click" />
+                    <asp:Button ID="btnMaisImg" stylo="width: 270px;" runat="server" Text="Usar dedinhos" CssClass="btn btn-default" OnClick="btnMaisImg_Click" />
                     <div id="divimg" runat="server">
                         <h1 style="padding-right: 25px">
                             <img id="img" runat="server" src="#" height="200" />

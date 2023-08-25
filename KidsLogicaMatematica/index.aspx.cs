@@ -7,15 +7,13 @@ using System.Web.UI.WebControls;
 
 namespace KidsLogicaMatematica
 {
-    public partial class _Default : Page
+    public partial class index : Page
     {
         
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
             {
-               
-                    Response.Redirect("~/index.aspx"); // Redireciona para a página index.aspx
                
             }           
         }

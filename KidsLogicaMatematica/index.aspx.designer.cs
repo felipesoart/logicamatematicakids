@@ -10,6 +10,6 @@
 namespace KidsLogicaMatematica {
     
     
-    public partial class _Default {
+    public partial class index {
     }
 }

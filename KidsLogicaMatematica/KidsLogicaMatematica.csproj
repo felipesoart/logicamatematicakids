@@ -106,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="audio\Summer Shower - Quincas Moreira.mp3" />
+    <Content Include="index.aspx" />
     <Content Include="Divisao.aspx" />
     <Content Include="Soma.aspx" />
     <Content Include="Multiplicacao.aspx" />
@@ -175,6 +176,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Divisao.aspx.cs">
       <DependentUpon>Divisao.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
